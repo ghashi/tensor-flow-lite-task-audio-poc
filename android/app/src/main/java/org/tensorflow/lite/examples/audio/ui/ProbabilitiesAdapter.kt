@@ -59,7 +59,7 @@ internal class ProbabilitiesAdapter : RecyclerView.Adapter<ProbabilitiesAdapter.
 
         fun bind(label: String, score: Float, index: Int) {
             with(binding) {
-                labelTextView.text = label
+                labelTextView.text = label + " " + score
 
                 progressBar.progressBackgroundTintList =
                     ColorStateList.valueOf(

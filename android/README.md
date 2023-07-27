@@ -1,5 +1,7 @@
 # TensorFlow Lite Audio Classification Android Demo
 
+This is a "fork" of https://www.tensorflow.org/lite/android/tutorials/audio_classification
+
 ### Overview
 
 This sample will record audio on a physical Android device and attempt to
@@ -9,10 +11,6 @@ a custom speech command model trained using
 [TensorFlow's Model Maker](https://www.tensorflow.org/lite/models/modify/model_maker/speech_recognition).
 These instructions walk you through building and running the demo on an Android
 device.
-
-The model files are downloaded via Gradle scripts when you build and run the
-app. You don't need to do any steps to download TFLite models into the project
-explicitly.
 
 This application should be run on a physical Android device.
 
@@ -40,8 +38,3 @@ This application should be run on a physical Android device.
 
 *   With your Android device connected to your computer and developer mode
     enabled, click on the green Run arrow in Android Studio.
-
-### Models used
-
-Downloading, extraction, and placing the models into the assets folder is
-managed automatically by the download_model.gradle file.

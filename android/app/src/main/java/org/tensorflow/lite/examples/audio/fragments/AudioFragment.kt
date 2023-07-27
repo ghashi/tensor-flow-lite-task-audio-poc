@@ -93,6 +93,11 @@ class AudioFragment : Fragment() {
                         audioHelper.currentModel = AudioClassificationHelper.YAMNET_MODEL
                         audioHelper.initClassifier()
                     }
+                    R.id.birds -> {
+                        audioHelper.stopAudioClassification()
+                        audioHelper.currentModel = AudioClassificationHelper.BIRDS
+                        audioHelper.initClassifier()
+                    }
                     R.id.speech_command -> {
                         audioHelper.stopAudioClassification()
                         audioHelper.currentModel = AudioClassificationHelper.SPEECH_COMMAND_MODEL

@@ -115,11 +115,17 @@ class AudioClassificationHelper(
     }
 
     private fun classifyAudio() {
-        tensorAudio.load(recorder)
-        var inferenceTime = SystemClock.uptimeMillis()
-        val output = classifier.classify(tensorAudio)
-        inferenceTime = SystemClock.uptimeMillis() - inferenceTime
-        listener.onResult(output[0].categories, inferenceTime)
+       tensorAudio.load(recorder)
+       var inferenceTime = SystemClock.uptimeMillis()
+       val output = classifier.classify(tensorAudio)
+       inferenceTime = SystemClock.uptimeMillis() - inferenceTime
+       if (output.size > 1) {
+         Log.d("AudioClassificationHelper", output[1].toString() );
+         Log.d("AudioClassificationHelper", output[0].toString() );
+         listener.onResult(output[1].categories, inferenceTime)
+       } else {
+         listener.onResult(output[0].categories, inferenceTime)
+       }
     }
 
     fun stopAudioClassification() {
@@ -135,5 +141,6 @@ class AudioClassificationHelper(
         const val DEFAULT_OVERLAP_VALUE = 0.5f
         const val YAMNET_MODEL = "yamnet.tflite"
         const val SPEECH_COMMAND_MODEL = "speech.tflite"
+        const val BIRDS = "bird.tflite"
     }
 }
