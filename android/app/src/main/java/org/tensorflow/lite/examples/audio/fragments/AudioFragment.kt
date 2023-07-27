@@ -140,19 +140,17 @@ class AudioFragment : Fragment() {
         }
 
         fragmentAudioBinding.bottomSheetLayout.resultsPlus.setOnClickListener {
-            if (audioHelper.numOfResults < 5) {
-                audioHelper.numOfResults++
-                audioHelper.stopAudioClassification()
-                audioHelper.initClassifier()
-                fragmentAudioBinding.bottomSheetLayout.resultsValue.text =
-                    audioHelper.numOfResults.toString()
-            }
+            audioHelper.numOfResults++
+            audioHelper.stopAudioClassification()
+            audioHelper.initClassifier()
+            fragmentAudioBinding.bottomSheetLayout.resultsValue.text =
+                audioHelper.numOfResults.toString()
         }
 
         // Allow the user to change the confidence threshold required for the classifier to return
         // a result. Increments in steps of 10%.
         fragmentAudioBinding.bottomSheetLayout.thresholdMinus.setOnClickListener {
-            if (audioHelper.classificationThreshold >= 0.2) {
+            if (audioHelper.classificationThreshold >= 0.1) {
                 audioHelper.stopAudioClassification()
                 audioHelper.classificationThreshold -= 0.1f
                 audioHelper.initClassifier()

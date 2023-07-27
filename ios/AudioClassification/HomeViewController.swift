@@ -28,7 +28,7 @@ class HomeViewController: UIViewController {
 
   private var modelType: ModelType = .Yamnet
   private var overLap = 0.5
-  private var maxResults = 3
+  private var maxResults = 600
   private var threshold: Float = 0.0
   private var threadCount = 2
 

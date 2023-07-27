@@ -147,11 +147,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zGs-gP-mUD">
-                                        <rect key="frame" x="112" y="96" width="261" height="32"/>
+                                        <rect key="frame" x="117" y="96" width="256" height="32"/>
                                         <segments>
                                             <segment title="YAMNET"/>
                                             <segment title="Speech Command"/>
-                                            <segment title="Snore"/>
+                                            <segment title="Birds"/>
                                         </segments>
                                         <connections>
                                             <action selector="modelSegmentedValueChanged:" destination="iph-Fi-onr" eventType="valueChanged" id="MnP-e5-AgW"/>
