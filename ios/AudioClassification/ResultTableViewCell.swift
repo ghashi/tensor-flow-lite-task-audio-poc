@@ -22,7 +22,7 @@ class ResultTableViewCell: UITableViewCell {
   @IBOutlet weak var scoreWidthLayoutConstraint: NSLayoutConstraint!
 
   func setData(_ data: ClassificationCategory) {
-    nameLabel.text = data.label
+      nameLabel.text = (data.label ?? "")  + " \(data.score) " ;
     if !data.score.isNaN {
       // score view width is equal 1/4 screen with
       scoreWidthLayoutConstraint.constant = UIScreen.main.bounds.width / 4 * CGFloat(data.score)

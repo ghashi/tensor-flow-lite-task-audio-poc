@@ -114,12 +114,15 @@ extension HomeViewController {
 
 enum ModelType: String {
   case Yamnet = "YAMNet"
+  case bird = "bird"
   case speechCommandModel = "Speech Command"
 
   var fileName: String {
     switch self {
     case .Yamnet:
       return "yamnet"
+    case .bird:
+      return "bird"
     case .speechCommandModel:
       return "speech_commands"
     }

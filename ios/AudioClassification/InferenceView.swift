@@ -64,7 +64,8 @@ class InferenceView: UIView {
   }
 
   @IBAction func modelSegmentedValueChanged(_ sender: UISegmentedControl) {
-    let modelSelect: ModelType = sender.selectedSegmentIndex == 0 ? .Yamnet : .speechCommandModel
+    let modelSelect: ModelType = sender.selectedSegmentIndex == 0 ? .Yamnet :
+      sender.selectedSegmentIndex == 2 ? .bird : .speechCommandModel
     delegate?.view(self, needPerformActions: .changeModel(modelSelect))
   }
 

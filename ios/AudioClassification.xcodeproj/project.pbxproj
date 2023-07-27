@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FA95C2C2A72E68700E4518A /* bird.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 8FA95C2B2A72E68700E4518A /* bird.tflite */; };
 		9E2DC7A5D9D560890EC07075 /* Pods_AudioClassification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB90CD43F9B8F013EA69E62 /* Pods_AudioClassification.framework */; };
 		BF646A7528A4DBD7006741D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF646A7428A4DBD7006741D8 /* AppDelegate.swift */; };
 		BF646A7928A4DBD7006741D8 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF646A7828A4DBD7006741D8 /* HomeViewController.swift */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		816D964E1C100FB246C3D6A2 /* Pods-AudioClassification.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioClassification.release.xcconfig"; path = "Target Support Files/Pods-AudioClassification/Pods-AudioClassification.release.xcconfig"; sourceTree = "<group>"; };
 		8CB90CD43F9B8F013EA69E62 /* Pods_AudioClassification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioClassification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FA95C2B2A72E68700E4518A /* bird.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = bird.tflite; sourceTree = "<group>"; };
 		BF646A7128A4DBD7006741D8 /* AudioClassification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioClassification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF646A7428A4DBD7006741D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF646A7828A4DBD7006741D8 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		BF646A9828A4DDEA006741D8 /* TFLite */ = {
 			isa = PBXGroup;
 			children = (
+				8FA95C2B2A72E68700E4518A /* bird.tflite */,
 				BF646A9928A4DDEA006741D8 /* AudioClassificationHelper.swift */,
 				BF646A9A28A4DDEA006741D8 /* yamnet.tflite */,
 				BF646A9B28A4DDEA006741D8 /* speech_commands.tflite */,
@@ -173,6 +176,7 @@
 			files = (
 				BF646A8128A4DBD9006741D8 /* LaunchScreen.storyboard in Resources */,
 				BF646AA128A4DDEA006741D8 /* speech_commands.tflite in Resources */,
+				8FA95C2C2A72E68700E4518A /* bird.tflite in Resources */,
 				BF646AA028A4DDEA006741D8 /* yamnet.tflite in Resources */,
 				BF646A7C28A4DBD7006741D8 /* Main.storyboard in Resources */,
 				BF646AA228A4DDEA006741D8 /* Assets.xcassets in Resources */,
