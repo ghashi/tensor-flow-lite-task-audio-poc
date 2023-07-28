@@ -8,4 +8,5 @@ This code is practically the same as the tensorflow tutorial ["Transfer Learning
 
 # Obs
 On Linux, it may be necessary to install "libportaudio2": `sudo apt -y install libportaudio2`
-On Mac, it may be necessary to install "portaudio": `brew install portaudio`
+On Mac, it may be necessary to install "portaudio": `brew install portaudio` . I installed the version `stable 19.7.0`
+ 
