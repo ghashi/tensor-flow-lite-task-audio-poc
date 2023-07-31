@@ -4,7 +4,7 @@ This code is practically the same as the tensorflow tutorial ["Transfer Learning
 - Python 3.7
 - Numpy Version: 1.21.6
 - TensorFlow Version: 2.9.3
-- Model Maker Version: 0.3.4
+- Model Maker Version: 0.3.4 (or 0.4.2)
 
 # Obs
 On Linux, it may be necessary to install "libportaudio2": `sudo apt -y install libportaudio2`
